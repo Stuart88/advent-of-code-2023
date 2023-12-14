@@ -64,16 +64,17 @@ namespace AdventOfCode2023._5
 
 			Console.WriteLine("Starting...");
 
+			var pairsCount = rangePairs.Sum(x => x.end - x.start);
+
 			Parallel.ForEach(rangePairs, pair =>
 			{
-				//147005974
 				for (long i = pair.start; i < pair.end; i++)
 				{
 					count++;
 					if (count % 1000000 == 0)
 					{
 						Console.SetCursorPosition(0, Console.CursorTop);
-						Console.Write($"Count: {count:N0}");
+						Console.Write($"Count: {count:N0} / {pairsCount:N0}");
 					}
 
 					long mapping = i;
@@ -94,6 +95,7 @@ namespace AdventOfCode2023._5
 				}
 			});
 
+			Console.WriteLine();
 			Console.WriteLine($"Day5 Q1: {result}");
 		}
 
