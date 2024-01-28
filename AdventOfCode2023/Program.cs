@@ -5,6 +5,8 @@ using AdventOfCode2023._3;
 using AdventOfCode2023._4;
 using AdventOfCode2023._5;
 using AdventOfCode2023._6;
+using AdventOfCode2023._7;
+using AdventOfCode2023._8;
 
 //Day1.SolveOne();
 //Day1.SolveTwo();
@@ -26,7 +28,15 @@ using AdventOfCode2023._6;
 //Day5.SolveTwo();
 //Console.WriteLine();
 
-Day6.SolveOne();
-Day6.SolveTwo();
+//Day6.SolveOne();
+//Day6.SolveTwo();
+//Console.WriteLine();
+
+//Day7.SolveOne();
+//Day7.SolveTwo();
+//Console.WriteLine();
+
+//Day8.SolveOne();
+Day8.SolveTwo();
 Console.WriteLine();
 
